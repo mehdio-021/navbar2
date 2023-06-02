@@ -1,0 +1,59 @@
+#download {
+  background: rgb(33, 33, 185);
+  background: linear-gradient(
+    90deg,
+    rgba(33, 33, 185, 1) 7%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  text-align: center;
+  color: #fff;
+}
+.download-title{
+    padding-bottom: 3rem;
+}
+.download-title h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+.download-title h2::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 10rem;
+  height: 1px;
+  bottom: 10px;
+  right: 50%;
+  transform: translateX(50%);
+}
+.download-title p{
+    font-size: 1.5rem;
+}
+.download-apps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.download-app{
+    width: 12rem;
+    padding: 1rem;
+    border: 2px solid #fff;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+@media screen and (max-width: 400px) {
+    .download-title h2{
+        font-size: 2rem;
+    } 
+    .download-apps{
+        flex-wrap: wrap;
+    }
+    .download-app{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+}
